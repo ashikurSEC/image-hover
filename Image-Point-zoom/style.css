@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+    background: #e1e1e1;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.neumorphism-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 350px;
+    height: 450px;
+    border-radius: 10px;
+    box-shadow: 16px 16px 32px #bebebe, 0px 0px 32px #bebebe;
+    padding: 20px;
+    text-align: center;
+    
+}
+
+.image-point-zoom {
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    box-shadow: 16px 16px 32px #bebebe, 0px 0px 32px #bebebe;
+}
+
+.image-point-zoom img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transform-origin: 55% 65%;
+    transition: transform 1s, filter .5s ease-out;
+}
+
+.image-point-zoom:hover img {
+    transform: scale(5);
+}
+
+
+
+h3 {
+    margin: 10px 0;
+    font-size: 1.5rem;
+    font-weight: 900;
+    transition: transform .5s ease, color .5s ease;
+}
+
+h3:hover {
+    color: #008080;
+    transform: scale(1.6);
+}
+
+p {
+    margin:5px 0 15px 0px;
+    font-size: 1.2rem;
+    color: #222;
+    transition: transform .5s ease, color .5s ease;
+}
+
+p:hover {
+    color: #008080;
+    transform: scale(1.1);
+}
+
+.social-icons i {
+    text-decoration: none;
+    color: #222;
+    font-size: 1.5rem;
+    margin: 0 5px;
+    transition: transform .5s ease, color .5s ease;
+}
+
+.social-icons i:hover {
+    color: #008080;
+    transform: rotate(60deg);
+}
+
